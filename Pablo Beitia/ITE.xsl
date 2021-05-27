@@ -17,9 +17,9 @@
                 
 
                 <div class="introduccion">
-                    <p>Bienvenidos a la web del Grupo PROEDUCA, líder en educación en línea en España. Tiene como objetivo proporcionar la mejor oferta de educación superior en línea a sus estudiantes. Asume sus compromisos educativos en tres universidades: la Universidad Internacional de La Rioja (UNIR), la Universidad en Internet de México (UNIR México) y CUNIMAD. Asimismo, hace lo propio en la Escuela de Postgrado Neumann, situada en Perú, y en EEUU, donde tiene presencia a través de Marconi International University.</p>
+                    <p>Bienvenidos a la web del Grupo <xsl:value-of select="ite/empresa"/>, líder en educación en línea en España. Tiene como objetivo proporcionar la mejor oferta de educación superior en línea a sus estudiantes. Asume sus compromisos educativos en tres universidades: la Universidad Internacional de La Rioja (UNIR), la Universidad en Internet de México (UNIR México) y CUNIMAD. Asimismo, hace lo propio en la Escuela de Postgrado Neumann, situada en Perú, y en EEUU, donde tiene presencia a través de Marconi International University.</p>
 
-                    <p>Gracias a su modelo en línea, PROEDUCA cuenta con alumnos en más de 90 países, principalmente en España, Ecuador, Colombia, México, Perú, Argentina, Bolivia y EEUU. Es una compañía en constante evolución, buscando la mejora continua y la aplicación de tecnologías innovadoras en la educación.</p>
+                    <p>Gracias a su modelo en línea, <xsl:value-of select="ite/empresa"/> cuenta con alumnos en más de 90 países, principalmente en España, Ecuador, Colombia, México, Perú, Argentina, Bolivia y EEUU. Es una compañía en constante evolución, buscando la mejora continua y la aplicación de tecnologías innovadoras en la educación.</p>
 
                     <p>Puedes acccerder al campus a través del siguiente enlace: <a href="https://institutotecnologico.edix.com/group/campus/home">Campus</a></p>
                 </div>
@@ -85,7 +85,6 @@
                     <form style="text-align:left; margin-left:120px; margin-top:20px;">
                         <label for="nombre" class="colocar_nombre">Nombre: </label>
                             <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"/>
-                        
                       
                         <p>
                           <label for="email" class="email">Email: </label>
@@ -99,13 +98,22 @@
                       
                         <p>
                           <label for="asunto" class="asunto">Asunto: </label>
-                            <input type="text" name="asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto"/>
+                            <input type="text" name="asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto"/>
                         </p>            
-                      
+                        
+                        <label for="grado">¿Sobre que grado desea información?</label>
+                        <select id="grado" name="grado">
+                            <xsl:for-each select="//ciclos/ciclo">
+                                <option>
+                                    <xsl:value-of select="@id"/>
+                                </option>
+                            </xsl:for-each>
+                        </select>
+                        
                         <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
                     </form>
 
-                    <img id="logo" src="img/company_logo.png"></img>
+                    <a href="{ite/@web}"><img id="logo" src="img/company_logo.png"></img></a>
                 </div>
             </body>
         </html>
