@@ -1,0 +1,51 @@
+h1{
+    color:blue;
+}
+
+a{
+    color:blue;
+    text-decoration: underline;
+}
+
+table {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+th{
+    background-color: grey;
+
+}
+
+th, td{
+    width: 50px;    
+    padding: 10px;
+
+}
+
+.tabla_ancho{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
