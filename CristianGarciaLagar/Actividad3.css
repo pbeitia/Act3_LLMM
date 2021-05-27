@@ -51,7 +51,6 @@ a {
 
 a:visited {
   color: black;
-  text-decoration: aqua;
 }
 
 /*Estilo secciones*/
@@ -144,6 +143,7 @@ fieldset {
   top: 115px;
   left: 700px;
   width: 35%;
+  height: 640px;
   background-color: rgb(102, 99, 94);
   box-shadow: 5px 10px 20px 10px black;
 }
