@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 30px;
+}
+.enlace{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(46, 131, 146);
+    color: white;
+    border-radius: 10px;
+}
+
+.contacto{
+    
+    font-weight: normal;
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(46, 131, 146);
+    color: white;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+#contacto{
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+#tablas{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+#tabla1{
+    position: relative;
+   margin-bottom: 10px;
+   
+}
+
+#tabla2{
+    position: relative;
+   margin-bottom: 10px;
+}
+th{
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background-color: rgb(46, 131, 146);
+}
+
+td{
+    background-color: rgb(181, 224, 231);
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
